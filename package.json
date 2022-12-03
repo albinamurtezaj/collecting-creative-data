@@ -13,7 +13,7 @@
     "@geist-ui/react": "^2.2.5",
     "@geist-ui/react-icons": "^1.0.1",
     "bootstrap": "^5.2.2",
-    "next": "13.0.0",
+    "next": "^13.0.0",
     "react": "^18.2.0",
     "react-dom": "18.2.0"
   },

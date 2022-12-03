@@ -23,18 +23,14 @@ function Contact(){
     }
     return (
     <>
-    <container className={styles.container}>
+    <container className={styles.container} onClick={handleClick}>
     <p className={styles.use}>Contact</p>
         <h2>For any questions and concerns, please contact</h2>
         <ul className={styles.contactlist}>
             <p>Albina Murtezaj</p>
             <p>Student Assistant Humbodt-University of Berlin</p>
             <p>Email: murtezaa@informatik.hu-berlin.de </p>
-
-       
     </ul>
-  
-  
   </container>
   
         </>
