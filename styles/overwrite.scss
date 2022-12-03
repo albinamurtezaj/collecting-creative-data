@@ -1,0 +1,15 @@
+
+@media (prefers-color-scheme: dark) {
+  $bs-body-bg: rgb(53, 53, 53);
+  html {
+    color-scheme: dark;
+  }
+  body {
+    background-color: rgb(53, 53, 53);
+    color: rgb(156, 156, 156);
+  }
+
+  textarea {
+    color: rgb(166, 166, 166); 
+  }
+}

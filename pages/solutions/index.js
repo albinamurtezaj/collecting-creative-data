@@ -1,7 +1,7 @@
 import styles from '../../styles/Home.module.css'
-// import { solutions } from '../../data/solutions'
+import { solutions } from '../../data/solutions'
 import { useRouter} from 'next/router'
-// import { useState } from 'react'
+import { useState } from 'react'
 import {
     Grid,
     Text,
@@ -17,10 +17,10 @@ import {
   } from '@geist-ui/react'
 
 function Start(){
-  // const router = useRouter()
-  // const [solutions, setSolutions] = useState([]) 
-  // const [solution, setSolution] = useState([])
-/*
+  const router = useRouter()
+  const [solutions, setSolutions] = useState([]) 
+  const [solution, setSolution] = useState([])
+
   const fetchSolution = async() => {
     const response = await fetch('/api/solutions')
     const data = await response.json()
@@ -40,7 +40,7 @@ function Start(){
 
         router.replace('../feedback')
     } 
-*/
+
 
     return (
     <>
@@ -58,9 +58,8 @@ function Start(){
                   width="100%"
                   height="200px"
                   placeholder="..."
-                  value={''}
+                  // value={''}
                   onChange={e => e.target.value}
-                  color="warning"
                 />
                 <Spacer w={2} />
 
