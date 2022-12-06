@@ -1,0 +1,23 @@
+.layout-header{
+    /* background-color: rgb(253, 253, 254); */
+    color: rgb(19, 12, 2);
+    font-size: 30px;
+    text-align: center;
+    padding: 30px;
+}
+
+.layout-footer{
+    position: absolute;
+    bottom: 0;
+    /* background-color: rgb(238, 247, 247); */
+    color: rgb(18, 11, 3);
+    font-size: 15px;
+    text-align: center;
+  
+    position: relative;
+    bottom: 0; 
+}
+
+.MyApp {
+    background-image: "maths.jpeg";
+}
