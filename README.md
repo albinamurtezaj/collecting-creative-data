@@ -3,6 +3,15 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ## Getting Started
 If not done so far: 'npm i next' to download node modules
 
+Start your database
+
+Create .env.local file with 
+MYSQL_HOST= 127.0.0.1
+MYSQL_PORT= 3306
+MYSQL_DATABASE= solutions
+MYSQL_USER= root  
+MYSQL_PASSWORD=   
+
 First, run the development server:
 
 ```bash
