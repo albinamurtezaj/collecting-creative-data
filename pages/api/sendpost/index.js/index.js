@@ -4,7 +4,7 @@ export default async (req,res) => {
     try {
         console.log("req nom", req.body)
         const result = await excuteQuery({
-            query: 'INSERT INTO solutions VALUES(?)',
+            query: 'INSERT INTO solutions (`text`) VALUES(?)',
             values: [req.body.content],
         });
         console.log("ttt",result);
