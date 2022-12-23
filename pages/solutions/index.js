@@ -1,6 +1,6 @@
 import styles from '../../styles/Home.module.css'
 import { solutions } from '../../data/solutions'
-import { useRouter} from 'next/router'
+import Router, { useRouter} from 'next/router'
 import { useState } from 'react'
 import dynamic from 'next/dynamic'
 import parse from 'html-react-parser'
@@ -21,13 +21,19 @@ import {
   } from '@geist-ui/react'
 
 
-  function submitSolution(value) {
+
+  function submitSolution(value, router) {
     console.log(value)
+    router.replace('/feedback')
     let data={content : value }
     axios.post('/api/sendpost', data)
     .then((response) => {
+      const router = useRouter();
+
       console.log(response)
+
     })
+    router.replace('/feedback')
     .catch((e) => {console.log(e)})
     
 }
@@ -35,7 +41,9 @@ import {
  
 
 export default function Start(){
+ const router = useRouter()
   const [value, setValue] = useState('');
+
   return (
     <Grid.Container justify="center" height="100%">
         <Grid>
@@ -56,7 +64,9 @@ export default function Start(){
 
                 <Spacer w={2} />
                 <p>
-                  <a href="/feedback" onClick={e => submitSolution(document.getElementById("txt").value)}  >
+              
+
+                  <a onClick={() => submitSolution(document.getElementById("txt").value, router)} >
                     Submit solution!
                   </a>
                 </p>
